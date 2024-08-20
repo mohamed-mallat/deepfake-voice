@@ -2,8 +2,8 @@
 
 this repo highlights my simple approach to train muliptle models for DeepFake voic recognition and test them comparing the results.
 
+This [dataset](https://drive.google.com/file/d/11nYcEMRlhrOtXIH6eMW2VaMPAMIcztH2/view?usp=drive_link) used in this repo: 
 
-https://drive.google.com/file/d/11nYcEMRlhrOtXIH6eMW2VaMPAMIcztH2/view?usp=drive_link
 ## Overview
 
 The notebook covers the following phases:
@@ -33,6 +33,18 @@ Three different models are implemented and evaluated:
 - **LSTM Model**
   - A Sequential LSTM model is defined and trained.
   - The model's performance is evaluated based on accuracy and loss metrics.
+  - Model Architecture
+
+| Layer (type)      | Output Shape | Param #  |
+|-------------------|--------------|----------|
+| lstm (LSTM)       | (None, 17, 64) | 19,200   |
+| lstm_1 (LSTM)     | (None, 64)     | 33,024   |
+| dense (Dense)     | (None, 64)     | 4,160    |
+| dropout (Dropout) | (None, 64)     | 0        |
+| dense_1 (Dense)   | (None, 32)     | 2,080    |
+| dropout_1 (Dropout)| (None, 32)    | 0        |
+| dense_2 (Dense)   | (None, 1)      | 33       |
+
   
 - **WireNet Model**
   - A custom WireNet architecture is designed using Conv1D and LSTM layers.

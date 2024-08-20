@@ -26,7 +26,7 @@ The EDA phase involves analyzing the dataset to understand its characteristics a
 - **Distribution Plots**: Visualizations are created to show the distribution of features for different labels (Fake vs. Real).
 ![Distribution Plot](images/eda_plots.bmp)
 - **Correlation Matrix**: A heatmap is plotted to visualize correlations between features.
-![Distribution Plot](images/conf_matrix.bmp)
+![Distribution Plot](images/corr_matrix.bmp)
 
 ### 2. Modeling
 
